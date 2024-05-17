@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "GenZ_backend": {
+      "main": "src/GenZ_backend/main.mo",
+      "type": "motoko"
+    },
+    "GenZ_frontend": {
+      "dependencies": [
+        "GenZ_backend"
+      ],
+      "source": [
+        "src/GenZ_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "GenZ_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
